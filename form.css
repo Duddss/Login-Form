@@ -1,0 +1,206 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
+
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    background-color: #191816;
+
+}
+
+fieldset {
+    border: none;
+}
+
+.header-top {
+    width: 115px;
+    height: 28px;
+    margin-left: 40px;
+    margin-top: 40px;
+    display: flex;
+}
+
+.form {
+    display: flex;
+    justify-content: center;
+    gap: 145px;
+}
+
+.titulo {
+    display: flex;
+    gap: 5px
+}
+
+
+
+.form>form {
+    width: 572px;
+    height: 512px;
+    background: #24221F;
+    border-radius: 4px;
+    display: flex;
+    justify-content: center;
+    margin-left: 74px;
+    margin-top: 100px;
+}
+
+
+::placeholder {
+    color: #AFB6C2;
+}
+
+.titulo>h1 {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 36px;
+    color: #D4CCB6;
+}
+
+.descricao {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    color: #AFB6C2;
+    margin-bottom: 25px;
+}
+
+.input-text {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    color: #AFB6C2;
+    margin-top: 10px;
+    margin-bottom: 15px;
+}
+
+
+.input-text>label {
+    display: flex;
+    margin-bottom: 8px;
+}
+
+
+.input-text>input {
+    width: 335px;
+    height: 44px;
+    border: 1px solid #868686;
+    box-sizing: border-box;
+    box-shadow: 0px 0px 0px 2px #868686;
+    border-radius: 4px;
+    display: block;
+    outline: none;
+    color: #ffff;
+}
+
+.email>input {
+    background: url(./images/mail.svg) no-repeat;
+    background-position: 8px;
+    padding-left: 32px;
+
+}
+
+.senha>input {
+    background: url(./images/lock.svg) no-repeat;
+    padding-left: 32px;
+    background-position: 8px;
+    margin-bottom: 35px;
+}
+
+.input-check {
+    display: flex;
+    color: #AFB6C2;
+    margin-top: 10px;
+}
+
+
+.input-check>input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+}
+
+
+.check {
+    left: 0;
+    top: 0;
+    width: 20px;
+    height: 20px;
+    border: 1px solid #868686;
+    box-sizing: border-box;
+    border-radius: 4px;
+    display: flex;
+    margin-right: 5px;
+}
+
+.input-check>input:checked~.check {
+    background: #FFC632;
+}
+
+.recuperar-senha>a {
+    display: flex;
+    margin-left: 85px;
+}
+
+
+.recuperar-senha>a {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 21px;
+    color: #FFC632;
+    text-decoration: none;
+}
+
+.entrar>button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 334px;
+    height: 51px;
+    background: #FFC632;
+    border-radius: 4px;
+    cursor: pointer;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 27px;
+    letter-spacing: 0.015em;
+    text-transform: uppercase;
+    color: #473404;
+    margin-top: 25px;
+}
+
+.create-account>a {
+    text-decoration: none;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 21px;
+    color: #FFC632;
+    display: flex;
+    justify-content: center;
+    margin-top: 25px;
+}
+
+.img-aside {
+    background-image: url(./images/side-image.jpg);
+    width: 900px;
+    height: 1000px;
+    background-repeat: no-repeat;
+    margin-top: -100px;
+    background-size: cover;
+}
+
+
+
+.input-text>input:focus-within {
+    border: 1px solid #FFC632;
+    box-shadow: 0px 0px 0px 2px #FFC632;
+}
